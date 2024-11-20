@@ -1,1 +1,13 @@
-spring.application.name=practicaljava
+logging:
+  level:
+    root: INFO           # Default logging level for the application
+    com.course: DEBUG  # Set DEBUG level for your custom package
+  file:
+    name: logs/application.log  # Log file path
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"  # Pattern for console logs
+    file: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"     # Pattern for file logs
+
+
+
+
